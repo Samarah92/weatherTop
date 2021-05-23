@@ -13,6 +13,7 @@ import play.mvc.Controller;
 public class Dashboard extends Controller {
     public static void index() {
         Logger.info("Rendering Dashboard");
+        Member member = Account.getLoggedInMember();
 
         List<Station> stations = Station.findAll();
         for (Station station : stations) {
