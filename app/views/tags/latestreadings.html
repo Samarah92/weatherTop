@@ -1,0 +1,87 @@
+<section class="ui segment">
+    <div class="ui five inverted stackable cards">
+        <div class="blue card">
+            <div class="extra">
+                <h3 class="header">
+                    <span class="ui large red text">${_station.name}</span>
+                </h3>
+                <h4 class="header">
+                    ${_station.lat}
+                </h4>
+                <h4 class="header">
+                    ${_station.lng}
+                </h4>
+            </div>
+        </div>
+        <div class="blue card">
+            <div class="extra">
+                <h3 class="header">
+                    <span class="ui large blue text">Weather</span>
+                </h3>
+                <h4 class="header">
+                    ${_station.weatherCondition}
+                </h4>
+            </div>
+        </div>
+        <div class="blue card">
+            <div class="extra">
+                <h3 class="header">
+                    <span class="ui large blue text">Temperature</span>
+                </h3>
+                <h4 class="header">
+                    ${_station.celsius}&#8451;
+                </h4>
+                <h4 class="header">
+                    ${_station.farenheit}&#8457;
+                </h4>
+                <h4 class="header">
+                    <span class="ui medium red text">Min:</span>${_station.minTemperature}
+                </h4>
+                <h4 class="header">
+                    <span class="ui medium blue text">Max:</span>${_station.maxTemperature}
+                </h4>
+            </div>
+        </div>
+        <div class="blue card">
+            <div class="extra">
+                <h3 class="header">
+                    <span class="ui large blue text">Wind</span>
+                </h3>
+                <h4 class="header">
+                    ${_station.latestWindSpeed} bft
+                </h4>
+                <h4 class="header">
+                    ${_station.latestWindDirection}
+                </h4>
+                <h4 class="header">
+                    Feels like
+                </h4>
+                <h4 class="header">
+                    ${_station.windChill}
+                </h4>
+                <h4 class="header">
+                    <span class="ui medium red text">Min:</span>${_station.minWindSpeed} bft
+                </h4>
+                <h4 class="header">
+                    <span class="ui medium blue text">Max:</span>${_station.maxWindSpeed} bft
+                </h4>
+            </div>
+        </div>
+        <div class="blue card">
+            <div class="extra">
+                <h3 class="header">
+                    <span class="ui large blue text">Pressure</span>
+                </h3>
+                <h4 class="header">
+                    ${_station.latestPressure} hpa
+                </h4>
+                <h4 class="header">
+                    <span class="ui medium red text">Min:</span>${_station.minPressure} hpa
+                </h4>
+                <h4 class="header">
+                    <span class="ui medium blue text">Max:</span>${_station.maxPressure} hpa
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
